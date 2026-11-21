@@ -1,0 +1,11 @@
+LEI,Entity.LegalName,Entity.OtherEntityNames.OtherEntityName.1,Entity.OtherEntityNames.OtherEntityName.1.type,Entity.LegalAddress.FirstAddressLine,Entity.LegalAddress.AdditionalAddressLine.1,Entity.LegalAddress.City,Entity.LegalAddress.Country,Entity.LegalAddress.PostalCode,Entity.HeadquartersAddress.FirstAddressLine,Entity.HeadquartersAddress.City,Entity.HeadquartersAddress.Country,Entity.HeadquartersAddress.PostalCode,Entity.RegistrationAuthority.RegistrationAuthorityID,Entity.RegistrationAuthority.RegistrationAuthorityEntityID,Entity.LegalJurisdiction,Entity.EntityCategory,Entity.EntitySubCategory,Entity.LegalForm.EntityLegalFormCode,Entity.EntityStatus,Entity.EntityCreationDate,Entity.SuccessorEntity.1.SuccessorLEI,Registration.InitialRegistrationDate,Registration.LastUpdateDate,Registration.RegistrationStatus,Registration.NextRenewalDate,Registration.ManagingLOU,ConformityFlag
+549300PARENT00000001,Acme Global Holdings Ltd,,,1 Parent Plaza,,Wilmington,US,19801,1 Parent Plaza,Wilmington,US,19801,RA000585,1234567,US-DE,GENERAL,,8888,ACTIVE,2001-05-06,,2012-01-15,2026-01-01,ISSUED,2027-01-15,54930084UKLVMY22DS16,CONFORMING
+549300SUBSID00000002,Acme Subsidiary Pte. Ltd.,Acme Sub,ALTERNATIVE_LANGUAGE_LEGAL_NAME,8 Marina Blvd,,Singapore,SG,018981,1 Parent Plaza,Wilmington,US,19801,RA000001,202600001A,SG,GENERAL,,8888,ACTIVE,,,2020-06-30,2026-02-02,ISSUED,2027-06-30,54930084UKLVMY22DS16,CONFORMING
+549300SOLEPROP000003,Tan Ah Kow Trading,,,,,Singapore,SG,,,,,,,,SG,SOLE_PROPRIETOR,,,ACTIVE,,,,,ISSUED,,,
+549300FUND0000000004,Acme Opportunities Fund,,,,,George Town,KY,,,,,,,,KY,FUND,GENERAL,,ACTIVE,,,2019-03-01,,ISSUED,,54930084UKLVMY22DS16,
+549300SUBFUND0000005,Acme Opportunities Sub-Fund I,,,,,George Town,KY,,,,,,,,KY,FUND,,,ACTIVE,,,2021-07-07,,LAPSED,,,
+549300EXCEPT00000006,Orphan Ventures Ltd,,,,,London,GB,,,,,,,,GB,GENERAL,,,NULL,,549300PARENT00000001,2018-11-11,,ISSUED,,,
+549300QUOTED00000007,"Weird ""Quoted"", Name
+Holdings GmbH",,,"Str. 1, Apt ""B""",,Berlin,DE,,,,,,,,DE,GENERAL,,,ACTIVE,,,,,ISSUED,,,
+549300BRANCH00000008,Acme Global Holdings Ltd (Singapore Branch),,,,,Singapore,SG,,,,,,,,SG,BRANCH,,,ACTIVE,,,,,ISSUED,,,
+549300UNCLASS0000009,Mystery Entity,,,,,,,,,,,,,,SG,,,,,,,,,,,,

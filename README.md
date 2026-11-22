@@ -1,5 +1,7 @@
 # GLEIF LEI Register & Ownership — Global Legal Entity Index with Parent Hierarchies
 
+The global Legal Entity Identifier register — the same LEI data US compliance teams must use for CFTC, Federal Reserve and SEC counterparty reporting — with direct and ultimate parent relationships for entity resolution and KYB.
+
 The complete global **Legal Entity Identifier (LEI)** register — **3,368,438 legal entities** across 308 jurisdictions — with GLEIF's Level 2 relationship data resolved onto every record: direct and ultimate parents, fund managers, sub-fund links, branch head offices, reporting exceptions, and children counts. Filter it, slice it, or pull portfolio analytics in one run.
 
 **Snapshot: GLEIF Golden Copy published 2026-11-21 16:00 UTC.** Every row carries its `snapshot_date`. The register is refreshed from GLEIF's thrice-daily Golden Copy publications.
@@ -18,7 +20,7 @@ One row per entity:
 
 - **Legal entities only.** Records with GLEIF EntityCategory `GENERAL`, `FUND`, `BRANCH`, `RESIDENT_GOVERNMENT_ENTITY` and `INTERNATIONAL_ORGANIZATION` ship. **SOLE_PROPRIETOR records (134,102 in this snapshot) are excluded by design** — they name natural persons.
 - **All statuses included** (ACTIVE and INACTIVE entities; ISSUED, LAPSED, RETIRED, … registrations). Use the filters for live-only views.
-- **Parent coverage is what GLEIF's Level 2 data supports:** ~3.8% of entities report a direct consolidation parent and ~3.9% an ultimate parent — most legal entities legitimately have no consolidating parent, and the exception reasons on each row say why. This product does not invent hierarchy data GLEIF does not publish.
+- **Parent coverage is what GLEIF's Level 2 data supports:** ~3.8% of entities report a direct consolidating parent and ~3.9% an ultimate parent — most legal entities legitimately have no consolidating parent, and the exception reasons on each row say why. This product does not invent hierarchy data GLEIF does not publish.
 
 ## Why not just use GLEIF's free API?
 
@@ -38,14 +40,14 @@ GLEIF's own API is an excellent **per-entity lookup** service — and it stays f
 | `nameContains` | Case-insensitive substring of the legal name |
 | `hasDirectParent` / `hasUltimateParent` | Tri-state: only-with / only-without / all |
 | `registeredFrom` / `registeredTo` | Initial LEI registration date window (YYYY-MM-DD) |
-| `limit` | Max rows returned (default 5,000; the prefilled run — Singapore, 5,000 rows — completes in seconds) |
+| `limit` | Max rows returned (default 5,000; the prefilled run — Singapore, 5,000 rows — completes in seconds. Full-register pulls take longer; a full-register `entities` run with `limit` removed returns ~3.37M rows) |
 
 ## Pricing
 
-**$20 per 1,000 results**, with the first **250 results free** on every run. Analytics mode is a single run over the filtered set.
+**$20 per 1,000 results**, with the first **250 results free** on every run. Analytics mode is a single ANALYTICS record in the key-value store — the 25 largest parents, the coverage statement and the full register breakdown. The 250 free results apply per run.
 
 ## Source & licence
 
-Source: GLEIF Golden Copy files — LEI-CDF (Level 1), RR-CDF (Level 2 relationships) and Reporting Exceptions — published by the Global Legal Entity Identifier Foundation. GLEIF makes LEI data available under the **CC0 1.0 Universal** licence (GLEIF LEI Data Terms of Use): free for commercial use and redistribution. Contains information from the GLEIF database.
+Source: GLEIF Golden Copy files — LEI-CDF (Level 1), RR-CDF (Level 2 relationships) and Reporting Exceptions, downloaded from GLEIF at 2026-11-21 16:00 UTC. Data licensed under the **CC0 1.0 Universal (Public Domain Dedication)**. Contains information published by GLEIF; see https://www.gleif.org/en/lei-data/gleif-data-quality-management.
 
 Independent tool by Proofhouse Ventures; not affiliated with or endorsed by GLEIF.

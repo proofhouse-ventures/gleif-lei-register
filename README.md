@@ -51,3 +51,22 @@ GLEIF's own API is an excellent **per-entity lookup** service — and it stays f
 Source: GLEIF Golden Copy files — LEI-CDF (Level 1), RR-CDF (Level 2 relationships) and Reporting Exceptions, downloaded from GLEIF at 2026-11-21 16:00 UTC. Data licensed under the **CC0 1.0 Universal (Public Domain Dedication)**. Contains information published by GLEIF; see https://www.gleif.org/en/lei-data/gleif-data-quality-management.
 
 Independent tool by Proofhouse Ventures; not affiliated with or endorsed by GLEIF.
+
+---
+**More public-data intelligence from Proofhouse Ventures**
+- Singapore government contract awards (GeBIZ): https://apify.com/proofhouse-ventures/gebiz-award-intelligence
+- Singapore HDB resale transactions: https://apify.com/proofhouse-ventures/hdb-resale-intelligence
+- UK property price-paid records: https://apify.com/proofhouse-ventures/uk-price-paid-intelligence
+- Singapore new company registrations (ACRA): https://apify.com/proofhouse-ventures/acra-new-companies-delta
+- Singapore contractor intelligence (BCA × GeBIZ): https://apify.com/proofhouse-ventures/bca-contractor-intelligence
+- France company register (Sirene): https://apify.com/proofhouse-ventures/france-sirene-register
+
+Building a company-data product? The Global Company Registry API (on RapidAPI and MCPize) combines the Singapore, UK, France and LEI registers in one API.
+
+
+
+
+
+
+
+
